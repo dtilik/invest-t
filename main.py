@@ -12,8 +12,8 @@ from tinkoff.invest.constants import INVEST_GRPC_API, INVEST_GRPC_API_SANDBOX
 
 import config
 from utils.helpers import convert_candles_to_dataframe
-from strategies.momentum_strategy import MomentumStrategy
-from strategies.mean_reversion_strategy import MeanReversionStrategy
+from strategies.momentum.momentum_strategy import MomentumStrategy
+from strategies.mean_reversion.mean_reversion_strategy import MeanReversionStrategy
 
 # Set up logging
 logging.basicConfig(

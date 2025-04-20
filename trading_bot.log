@@ -1,0 +1,6 @@
+2025-04-20 11:22:04,121 - __main__ - INFO - Starting trading bot
+2025-04-20 11:22:04,121 - __main__ - INFO - Running in SANDBOX mode
+2025-04-20 11:22:04,121 - __main__ - INFO - Strategy: simple_momentum
+2025-04-20 11:22:04,121 - __main__ - INFO - Trading SBER with 1m candles
+2025-04-20 11:22:04,649 - tinkoff.invest.logging - INFO - 88b37381144f451716d86d04ca3de65c GetAccounts
+2025-04-20 11:22:04,650 - __main__ - ERROR - No accounts found

@@ -3,7 +3,7 @@ Momentum strategy implementation for Tinkoff Invest trading bot
 """
 import pandas as pd
 import numpy as np
-from strategies.base_strategy import BaseStrategy
+from strategies.base.base_strategy import BaseStrategy
 
 class MomentumStrategy(BaseStrategy):
     """
