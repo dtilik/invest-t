@@ -4,3 +4,73 @@
 2025-04-20 11:22:04,121 - __main__ - INFO - Trading SBER with 1m candles
 2025-04-20 11:22:04,649 - tinkoff.invest.logging - INFO - 88b37381144f451716d86d04ca3de65c GetAccounts
 2025-04-20 11:22:04,650 - __main__ - ERROR - No accounts found
+2025-04-26 16:54:16,199 - __main__ - INFO - Starting trading bot
+2025-04-26 16:54:16,200 - __main__ - INFO - Running in SANDBOX mode
+2025-04-26 16:54:16,200 - __main__ - INFO - Strategy: simple_momentum
+2025-04-26 16:54:16,200 - __main__ - INFO - Trading SBER with 1m candles
+2025-04-26 16:54:17,603 - tinkoff.invest.logging - INFO - 6175a5a605569c467fa26360d064fab8 GetAccounts
+2025-04-26 16:54:17,603 - __main__ - ERROR - No accounts found
+2025-04-27 06:41:55,283 - bot - INFO - Listing available accounts
+2025-04-27 06:41:55,284 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:41:56,736 - tinkoff.invest.logging - INFO - 49ce7fdc410d97f33c9afc576713c7d0 GetAccounts
+2025-04-27 06:41:56,736 - bot - INFO - No accounts found
+2025-04-27 06:41:56,740 - bot - INFO - Listing available accounts
+2025-04-27 06:41:56,740 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:41:57,691 - tinkoff.invest.logging - INFO - 12bed1ce4b8b3376514e29677991ff70 GetAccounts
+2025-04-27 06:41:57,696 - bot - INFO - No accounts found
+2025-04-27 06:42:00,001 - bot - INFO - Creating a new account
+2025-04-27 06:42:00,001 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:42:00,618 - tinkoff.invest.logging - INFO - 3c31a095855601eaf39dd2c9664e0968 OpenSandboxAccount
+2025-04-27 06:42:00,619 - bot - INFO - Successfully created new SANDBOX account: ceb910db-fc75-4eaf-9251-6167cd307ac4
+2025-04-27 06:42:00,755 - tinkoff.invest.logging - INFO - 17192b5dced73113d76794e530475639 SandboxPayIn
+2025-04-27 06:42:00,756 - bot - INFO - Funded sandbox account with 100,000 RUB
+2025-04-27 06:42:00,760 - bot - INFO - Listing available accounts
+2025-04-27 06:42:00,760 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:42:01,558 - tinkoff.invest.logging - INFO - f8c9132d490b6691aa850dd5fa1c640d GetAccounts
+2025-04-27 06:42:01,558 - bot - INFO - Found 1 account(s):
+2025-04-27 06:42:01,558 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:42:06,003 - bot - INFO - Listing available accounts
+2025-04-27 06:42:06,003 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:42:06,537 - tinkoff.invest.logging - INFO - 125abd1b824741fc6f28e8cbf0ee2c6a GetAccounts
+2025-04-27 06:42:06,538 - bot - INFO - Found 1 account(s):
+2025-04-27 06:42:06,538 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:42:17,581 - bot - INFO - Listing available accounts
+2025-04-27 06:42:17,581 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:42:18,729 - tinkoff.invest.logging - INFO - 4af2b75c25e7b812b405a092e6c4289a GetAccounts
+2025-04-27 06:42:18,729 - bot - INFO - Found 1 account(s):
+2025-04-27 06:42:18,729 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:43:02,791 - bot - INFO - Listing available accounts
+2025-04-27 06:43:02,791 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:43:03,680 - tinkoff.invest.logging - INFO - e276f6330ee85cb82d66a3105101c04a GetAccounts
+2025-04-27 06:43:03,680 - bot - INFO - Found 1 account(s):
+2025-04-27 06:43:03,680 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:43:03,683 - bot - INFO - Listing available accounts
+2025-04-27 06:43:03,683 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:43:04,697 - tinkoff.invest.logging - INFO - 09c169ef0244b946b2daca87565ef7d3 GetAccounts
+2025-04-27 06:43:04,698 - bot - INFO - Found 1 account(s):
+2025-04-27 06:43:04,698 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:43:07,114 - bot - INFO - Listing available accounts
+2025-04-27 06:43:07,114 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:43:08,587 - tinkoff.invest.logging - INFO - a469ca6c38580ab657fde0bf3a2e04dc GetAccounts
+2025-04-27 06:43:08,587 - bot - INFO - Found 1 account(s):
+2025-04-27 06:43:08,587 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:43:10,434 - bot - INFO - Listing available accounts
+2025-04-27 06:43:10,435 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:43:11,529 - tinkoff.invest.logging - INFO - 359d857573a0443120a5b5fa09b03f77 GetAccounts
+2025-04-27 06:43:11,529 - bot - INFO - Found 1 account(s):
+2025-04-27 06:43:11,530 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:53:35,873 - bot - INFO - Listing available accounts
+2025-04-27 06:53:35,874 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:53:36,796 - tinkoff.invest.logging - INFO - 74897f1bb4ef424ba6f12b8a4b856060 GetAccounts
+2025-04-27 06:53:36,797 - bot - INFO - Found 1 account(s):
+2025-04-27 06:53:36,797 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:53:36,802 - bot - INFO - Listing available accounts
+2025-04-27 06:53:36,802 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:53:37,833 - tinkoff.invest.logging - INFO - 4d444a40bd0cb9ee816f5a830bf336b4 GetAccounts
+2025-04-27 06:53:37,834 - bot - INFO - Found 1 account(s):
+2025-04-27 06:53:37,834 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN
+2025-04-27 06:53:42,828 - bot - INFO - Listing available accounts
+2025-04-27 06:53:42,828 - bot - INFO - Running in SANDBOX mode
+2025-04-27 06:53:43,803 - tinkoff.invest.logging - INFO - 765f7476e127ea4224d8715debdd72ad GetAccounts
+2025-04-27 06:53:43,803 - bot - INFO - Found 1 account(s):
+2025-04-27 06:53:43,804 - bot - INFO - ID: ceb910db-fc75-4eaf-9251-6167cd307ac4, Name: , Type: ACCOUNT_TYPE_TINKOFF, Status: ACCOUNT_STATUS_OPEN

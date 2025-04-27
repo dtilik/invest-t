@@ -68,6 +68,78 @@ class TradingBot:
             else:
                 logger.info("No trading signal detected")
     
+    def create_new_account(self):
+        """Create a new account in Tinkoff Invest API"""
+        logger.info("Creating a new account")
+        logger.info(f"Running in {'SANDBOX' if self.sandbox_mode else 'PRODUCTION'} mode")
+        
+        if not self.token:
+            logger.error("Tinkoff API token not found. Check your .env file.")
+            return
+        
+        with Client(self.token, target=self.target) as client:
+            try:
+                if self.sandbox_mode:
+                    # Create a new sandbox account
+                    response = client.sandbox.open_sandbox_account()
+                    account_id = response.account_id
+                    logger.info(f"Successfully created new SANDBOX account: {account_id}")
+                    
+                    # Optionally fund the sandbox account (example: 100,000 RUB)
+                    client.sandbox.sandbox_pay_in(
+                        account_id=account_id,
+                        amount=100000
+                    )
+                    logger.info(f"Funded sandbox account with 100,000 RUB")
+                else:
+                    # For production, we can't directly create accounts through API
+                    # We can only display instructions
+                    logger.info("In PRODUCTION mode, accounts must be created through the Tinkoff Invest website or mobile app.")
+                    logger.info("Please visit https://www.tinkoff.ru/invest/ to create a new account.")
+                
+                return account_id if self.sandbox_mode else None
+                
+            except Exception as e:
+                logger.error(f"Error creating new account: {e}")
+                return None
+    
+    def list_accounts(self):
+        """List all available accounts"""
+        logger.info("Listing available accounts")
+        logger.info(f"Running in {'SANDBOX' if self.sandbox_mode else 'PRODUCTION'} mode")
+        
+        if not self.token:
+            logger.error("Tinkoff API token not found. Check your .env file.")
+            return
+        
+        with Client(self.token, target=self.target) as client:
+            try:
+                accounts = client.users.get_accounts()
+                
+                if not accounts.accounts:
+                    logger.info("No accounts found")
+                    return []
+                
+                account_list = []
+                logger.info(f"Found {len(accounts.accounts)} account(s):")
+                
+                for account in accounts.accounts:
+                    account_info = {
+                        'id': account.id,
+                        'name': account.name,
+                        'type': account.type.name,
+                        'status': account.status.name,
+                        'opened_date': account.opened_date if hasattr(account, 'opened_date') else None
+                    }
+                    account_list.append(account_info)
+                    logger.info(f"ID: {account.id}, Name: {account.name}, Type: {account.type.name}, Status: {account.status.name}")
+                
+                return account_list
+                
+            except Exception as e:
+                logger.error(f"Error listing accounts: {e}")
+                return []
+    
     def get_historical_data(self, client):
         """Get historical candle data"""
         try:

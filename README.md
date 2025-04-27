@@ -36,12 +36,57 @@ source .venv/bin/activate  # for Linux/Mac
 pip install -r requirements.txt
 ```
 
-4. Create a .env file and add your token:
+## User Interface
+
+Invest-T includes a modern web-based dashboard built with Next.js to help you visualize and manage your trading operations.
+
+### UI Features
+
+- **Dashboard Overview**: View key performance metrics at a glance
+- **Account Management**: View, create, and modify trading accounts
+- **Strategy Management**: Configure and monitor your trading strategies
+- **Performance Analytics**: Visualize your trading performance with interactive charts
+- **Trading Journal**: Keep track of all your trades and their outcomes
+- **Real-time Price Charts**: Monitor market prices using TradingView's Lightweight Charts
+
+### UI Tech Stack
+
+- **Next.js**: React framework for the frontend
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **Recharts**: For data visualization
+- **Lucide React**: Icon library
+
+### UI Installation
+
+1. Navigate to the UI directory:
+```bash
+cd invest-t-ui
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the dashboard
+
+## Configuration
+
+1. Create a .env file and add your token:
 ```
 TINKOFF_TOKEN=your_token
 ```
 
-## Configuration
+### Backend Configuration
 
 The main settings are in the `config.py` file:
 
@@ -116,6 +161,37 @@ flowchart TD
     N --> G
     M -->|No| O[Terminate]
 ```
+
+## Architecture
+
+### System Architecture
+
+Invest-T consists of two main components:
+
+1. **Python Backend**: Handles trading logic, API communication, and strategy execution
+2. **Next.js Frontend**: Provides visualization and management of trading activities
+
+```mermaid
+graph TD
+    A[Next.js Frontend] -->|API Requests| B[Python Backend]
+    B -->|API Responses| A
+    B -->|Requests| C[Tinkoff Invest API]
+    C -->|Responses| B
+    B -->|Trading Signals| D[Strategy Modules]
+    D -->|Buy/Sell/Hold| B
+    B -->|Store Data| E[Database]
+    E -->|Retrieve Data| B
+    A -->|Fetch Analytics| E
+```
+
+### UI-Backend Integration
+
+The Next.js UI communicates with the Python backend via a REST API:
+
+- **Account Management**: View account balances, create/update accounts
+- **Strategy Configuration**: Update strategy parameters, activate/deactivate strategies
+- **Performance Monitoring**: Fetch historical trade data and performance metrics
+- **Real-time Updates**: WebSocket connection for live trade notifications and price updates
 
 ## Class Diagram
 
